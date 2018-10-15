@@ -1,0 +1,27 @@
+.todo-list {
+  list-style: none;
+
+  &__item {
+    padding: 5px 0;
+    border-bottom: 1px solid lighten($grey, 35%);
+
+    &__text {
+      &[data-completed='true'] {
+        text-decoration: line-through;
+        color: $red;
+      }
+    }
+    &__help {
+      color: $grey;
+    }
+
+    &__btn--del {
+      border-radius: 50%;
+      color: $grey;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

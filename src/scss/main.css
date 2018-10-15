@@ -1,0 +1,123 @@
+/************************************\
+  abstracts
+\************************************/
+/************************************\
+  base
+\************************************/
+@import url(~normalize.css/normalize.css);
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #3e3d3d; }
+
+* {
+  color: inherit; }
+
+a:active {
+  color: green; }
+
+a:visited {
+  color: lightblue; }
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px; }
+  button.primary {
+    background-color: #c0ffee;
+    color: #3e3d3d;
+    padding: 10px 30px; }
+
+ul {
+  padding: 0; }
+
+/************************************\
+  animations
+\************************************/
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/************************************\
+  components
+\************************************/
+.todo-list {
+  list-style: none; }
+  .todo-list__item {
+    padding: 5px 0;
+    border-bottom: 1px solid #d9d9d9; }
+    .todo-list__item__text[data-completed='true'] {
+      text-decoration: line-through;
+      color: #d31373; }
+    .todo-list__item__help {
+      color: grey; }
+    .todo-list__item__btn--del {
+      border-radius: 50%;
+      color: grey; }
+      .todo-list__item__btn--del:hover {
+        text-decoration: underline; }
+
+.add-todo__btn {
+  margin: 0 5px; }
+  .add-todo__btn--add {
+    background-color: #c0ffee;
+    margin: 0 5px; }
+  .add-todo__btn--cancel {
+    background-color: #d31373;
+    margin: 0 5px; }
+
+/************************************\
+Pages
+\************************************/
+.todos {
+  width: 30%;
+  margin: 0 auto; }
+  .todos__header {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 0.5px solid grey;
+    margin: 10px 0; }
+    .todos__header__date {
+      color: grey;
+      margin-left: 5px;
+      flex: 1 0; }
+    .todos__header__help {
+      flex-basis: 100%;
+      text-align: right;
+      flex: 1 0; }
+  .todos__new-todo-btn {
+    color: grey; }
+    .todos__new-todo-btn:hover {
+      text-decoration: underline; }
+
+/************************************\
+  layouts
+\************************************/
+.app__header {
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  color: white; }
+  .app__header .nav ul {
+    list-style: none; }
+
+.app__title {
+  font-size: 1.5em; }
+
+.app__intro {
+  font-size: large; }
+
+.app__logo {
+  animation: spin infinite 20s linear;
+  height: 80px; }
+
+/************************************\
+  vendor
+\************************************/

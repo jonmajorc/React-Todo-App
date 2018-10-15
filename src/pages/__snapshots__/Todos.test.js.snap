@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Page renders todo page 1`] = `
+<div
+  className="todos"
+  data-test="todo-page"
+>
+  <header
+    className="todos__header"
+  >
+    <h3>
+      My Todos
+    </h3>
+    <small
+      className="todos__header__date"
+    >
+      Fri May 25 2018
+    </small>
+    <button
+      className="todos__new-todo-btn"
+      data-test="new-todo-btn"
+      onClick={[Function]}
+    >
+      + Add Todo
+    </button>
+  </header>
+  <small
+    className="todos__header__help"
+  >
+    ( Click a todo to complete it! )
+  </small>
+  <TodoList
+    removeTodo={[Function]}
+    todos={Array []}
+    toggleTodo={[Function]}
+  >
+    <ul
+      className="todo-list"
+    />
+  </TodoList>
+</div>
+`;
